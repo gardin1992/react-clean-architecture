@@ -1,4 +1,5 @@
-import GlobalStyle from "../src/presentation/styles/global";
+import GlobalStyle from "../src/app/presentation/styles/global";
+
 // Global decorator to apply the styles to all stories
 export const decorators = [
   (Story) => (
