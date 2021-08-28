@@ -1,3 +1,4 @@
+import { colors } from "app/presentation/styles/theme";
 import styled from "styled-components";
 
 export const SHeaderLogo = styled.figure`
@@ -15,4 +16,6 @@ export const SHeader = styled.header`
   flex-direction: row;
   align-items: center;
   display: flex;
+  border-bottom: 1px solid ${colors.black};
+  margin-bottom: 20px;
 `;
