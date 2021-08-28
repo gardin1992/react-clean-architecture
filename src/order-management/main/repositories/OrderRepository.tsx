@@ -14,7 +14,7 @@ export function OrderRepository(httpClient: AxiosInstance): IRepository {
   }
 
   async function getById(id: string): Promise<Response> {
-    throw new Error("Method not implemented.");
+    return httpClient.get(`orders/${id}`);
   }
 
   return {
