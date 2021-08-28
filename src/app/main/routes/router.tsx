@@ -1,8 +1,9 @@
+import { orderManagementRoutes } from "order-management/main/routes";
+import { productManagementRoutes } from "product-management/main/routes";
 import { Route, Switch } from "react-router-dom";
-import { orderManagementFactory, productManagementFactory } from "../factories";
 import { homeViewFactory } from "../factories/home-view-factory";
 
-type RouteType = {
+export type RouteType = {
   path: string;
   exact?: boolean;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -15,16 +16,8 @@ const routes: RouteType[] = [
     component: () => homeViewFactory(),
     exact: true,
   },
-  {
-    path: "/order-management",
-    component: () => orderManagementFactory(),
-    exact: true,
-  },
-  {
-    path: "/product-management",
-    component: () => productManagementFactory(),
-    exact: true,
-  },
+  ...orderManagementRoutes,
+  ...productManagementRoutes,
 ];
 
 function Router() {
