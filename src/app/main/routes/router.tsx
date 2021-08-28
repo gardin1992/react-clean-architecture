@@ -1,5 +1,6 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import { orderManagementFactory, productManagementFactory } from "../factories";
+import { homeViewFactory } from "../factories/home-view-factory";
 
 type RouteType = {
   path: string;
@@ -10,28 +11,33 @@ type RouteType = {
 
 const routes: RouteType[] = [
   {
+    path: "/",
+    component: () => homeViewFactory(),
+    exact: true,
+  },
+  {
     path: "/order-management",
     component: () => orderManagementFactory(),
+    exact: true,
   },
   {
     path: "/product-management",
     component: () => productManagementFactory(),
+    exact: true,
   },
 ];
 
 function Router() {
   return (
-    <BrowserRouter>
-      <Switch>
-        {routes.map((route) => (
-          <Route
-            path={route.path}
-            component={route.component}
-            exact={route.exact}
-          />
-        ))}
-      </Switch>
-    </BrowserRouter>
+    <Switch>
+      {routes.map((route) => (
+        <Route
+          path={route.path}
+          component={route.component}
+          exact={route.exact}
+        />
+      ))}
+    </Switch>
   );
 }
 
