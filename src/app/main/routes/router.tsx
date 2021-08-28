@@ -1,5 +1,5 @@
-// import OrderManagement from "order-management/presentation/views/OrderManagement";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { orderManagementFactory } from "order-management/main/factories/order-management-factory";
 
 type RouteType = {
   path: string;
@@ -9,10 +9,10 @@ type RouteType = {
 };
 
 const routes: RouteType[] = [
-  // {
-  //   path: "/order-management",
-  //   component: OrderManagement,
-  // },
+  {
+    path: "/order-management",
+    component: () => orderManagementFactory(),
+  },
 ];
 
 function Router() {
