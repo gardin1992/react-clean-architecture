@@ -1,2 +1,1 @@
-export * from "./order-management-factory";
-export * from "./product-management-factory";
+export * from "./home-view-factory";
