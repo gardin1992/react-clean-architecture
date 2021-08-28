@@ -3,6 +3,7 @@ import { colors } from "app/presentation/styles/theme";
 import styled from "styled-components";
 
 export const SListFilterButton = styled(Button)`
+  flex: 0 0 32%;
   background-color: ${colors.white};
   font-size: 16px;
 

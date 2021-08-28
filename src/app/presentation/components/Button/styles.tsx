@@ -7,4 +7,8 @@ export const SButton = styled.button`
   color: ${colors.black};
   background-color: ${colors.white};
   cursor: pointer;
+
+  @media (max-width: 360px) {
+    padding: 8px 5px;
+  }
 `;
