@@ -4,6 +4,7 @@ import { OrderListFilter } from "order-management/presentation/views/OrderManage
 import { useOrderService } from "order-management/presentation/hooks/useOrderService";
 import { OrderList } from "./OrderList";
 import { IRepository } from "app/infra/repositories/IRepository";
+import { PageTitle } from "app/presentation/components/page-title";
 
 type OrderManagementProps = {
   orderRepository: IRepository;
@@ -19,6 +20,7 @@ function OrderManagement({ orderRepository }: OrderManagementProps) {
   }, [getAllOrders, orders]);
   return (
     <div>
+      <PageTitle title="Gestão de Pedidos" />
       <OrderListFilter />
       <OrderList orders={orders} />
     </div>

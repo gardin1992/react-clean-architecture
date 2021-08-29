@@ -12,6 +12,7 @@ import {
   SListItemText,
 } from "app/presentation/components/list/card-list/card-list-item/styles";
 import { IRepository } from "app/infra/repositories/IRepository";
+import { PageTitle } from "app/presentation/components/page-title";
 
 type OrderManagementProps = {
   orderRepository: IRepository;
@@ -72,6 +73,7 @@ export function ProductManagement({ orderRepository }: OrderManagementProps) {
   }, [getAllOrders, orders]);
   return (
     <div>
+      <PageTitle title="Gestão de Produto" />
       <OrderListFilter />
       <OrderListItemTest
         className="OrderListItemTest"

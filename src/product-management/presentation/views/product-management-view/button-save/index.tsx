@@ -3,18 +3,6 @@ import { colors } from "app/presentation/styles/theme";
 
 import styled from "styled-components";
 
-export const SProductManagementTitle = styled.div`
-  .title {
-    font-size: 16px;
-    margin: 10px;
-
-    small {
-      font-size: 12px;
-      color: #666;
-    }
-  }
-`;
-
 export const SProductManagementButtonSave = styled(Button)`
   background-color: ${colors.success};
   color: ${colors.white};

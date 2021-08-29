@@ -17,5 +17,4 @@ export const SHeader = styled.header`
   align-items: center;
   display: flex;
   border-bottom: 1px solid ${colors.black};
-  margin-bottom: 20px;
 `;

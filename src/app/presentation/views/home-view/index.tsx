@@ -1,8 +1,10 @@
+import { PageTitle } from "app/presentation/components/page-title";
 import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <PageTitle title="Home" />
       <ul>
         <li>
           <Link to={"/order-management"}>/order-management</Link>

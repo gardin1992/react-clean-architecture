@@ -1,11 +1,9 @@
 import { FomInputCheckbox } from "app/presentation/components/form/input-checkbox-form";
 import { FormInput } from "app/presentation/components/form/input-form";
+import { PageTitle } from "app/presentation/components/page-title";
 
 import React, { useState } from "react";
-import {
-  SProductManagementButtonSave,
-  SProductManagementTitle,
-} from "../product-management-view/button-save";
+import { SProductManagementButtonSave } from "../product-management-view/button-save";
 
 export type ProductFormData = {
   title: string;
@@ -36,11 +34,7 @@ export function ProductManagementAddView() {
 
   return (
     <div>
-      <SProductManagementTitle>
-        <h2 className="title">
-          Add Product <small>{productFormData.title}</small>
-        </h2>
-      </SProductManagementTitle>
+      <PageTitle title="Novo Produto" subtitle={productFormData.title} />
 
       <form>
         <FormInput
