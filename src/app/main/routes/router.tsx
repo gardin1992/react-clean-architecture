@@ -1,5 +1,7 @@
-import { orderManagementRoutes } from "order-management/main/routes";
-import { productManagementRoutes } from "product-management/main/routes";
+import { axiosHttpClient } from "app/infra/http";
+import { AxiosInstance } from "axios";
+import { makeOrderManagementRoutes } from "order-management/main/routes";
+import { makeProductManagementRoutes } from "product-management/main/routes";
 import { Route, Switch } from "react-router-dom";
 import { homeViewFactory } from "../factories/home-view-factory";
 
@@ -10,17 +12,21 @@ export type RouteType = {
   component: any;
 };
 
-const routes: RouteType[] = [
-  {
-    path: "/",
-    component: () => homeViewFactory(),
-    exact: true,
-  },
-  ...orderManagementRoutes,
-  ...productManagementRoutes,
-];
+type Props = {
+  httpClient: AxiosInstance;
+};
 
-function Router() {
+function Router({ httpClient }: Props) {
+  const routes: RouteType[] = [
+    {
+      path: "/",
+      component: () => homeViewFactory(),
+      exact: true,
+    },
+    ...makeOrderManagementRoutes(httpClient),
+    ...makeProductManagementRoutes(httpClient),
+  ];
+
   return (
     <Switch>
       {routes.map((route) => (
