@@ -75,11 +75,13 @@ export function ProductManagementAddView() {
 
         <FomInputCheckbox
           label={"Ativo"}
-          value={String(productFormData.active)}
+          checked={productFormData.active}
           handleOnChange={(e) => {
-            const value = e.currentTarget.value;
-            console.log(value);
-            handleOnChange<boolean>("active", true);
+            const target = e.currentTarget;
+            const value =
+              target.type === "checkbox" ? target.checked : target.value;
+
+            handleOnChange<boolean>("active", Boolean(value));
           }}
         />
 
