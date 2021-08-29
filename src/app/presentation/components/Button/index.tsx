@@ -1,3 +1,4 @@
+import cx from "classnames";
 import { SButton } from "./styles";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -7,11 +8,17 @@ export interface IButtonType extends React.HTMLAttributes<any> {
   type?: "button" | "submit" | "reset" | undefined;
 }
 
-export function Button({ children, variant, type, ...props }: IButtonType) {
+export function Button({
+  children,
+  className,
+  variant,
+  type,
+  ...props
+}: IButtonType) {
   return (
     <SButton
       {...props}
-      className={variant}
+      className={cx(variant, className)}
       role={variant === "link" ? "link" : "button"}
       type={type}
     >
@@ -19,7 +26,3 @@ export function Button({ children, variant, type, ...props }: IButtonType) {
     </SButton>
   );
 }
-
-Button.defaultProps = {
-  variant: "primary",
-};

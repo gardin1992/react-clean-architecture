@@ -1,9 +1,12 @@
-import { SListFilterGridButton } from "order-management/presentation/views/OrderManagement/OrderListFilter/styles";
+import {
+  SListFilterGridButton,
+  SOrderListFilter,
+} from "order-management/presentation/views/OrderManagement/OrderListFilter/styles";
 import { OrderListFilterButton } from "./OrderListFilterButton";
 
 export function OrderListFilter() {
   return (
-    <div>
+    <SOrderListFilter>
       <SListFilterGridButton className="">
         <OrderListFilterButton variant={"pending"}>
           Pendente
@@ -25,6 +28,6 @@ export function OrderListFilter() {
           Recusado
         </OrderListFilterButton>
       </SListFilterGridButton>
-    </div>
+    </SOrderListFilter>
   );
 }

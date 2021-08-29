@@ -9,5 +9,9 @@ export function OrderListFilterButton({
   variant,
   children,
 }: OrderListFilterButtonProps) {
-  return <SListFilterButton className={variant}>{children}</SListFilterButton>;
+  return (
+    <SListFilterButton variant={variant} className="OrderListFilterButton">
+      {children}
+    </SListFilterButton>
+  );
 }

@@ -6,6 +6,7 @@ export const SListFilterButton = styled(Button)`
   flex: 0 0 32%;
   background-color: ${colors.white};
   font-size: 16px;
+  text-transform: capitalize;
 
   &:hover {
     color: ${colors.white} !important;
