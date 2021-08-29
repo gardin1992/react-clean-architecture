@@ -5,9 +5,9 @@ import { getRandomInt } from "app/main/utils/math";
 export function randomOrderStatus(): string {
   const orderStatus = [
     "Pendente",
-    "Em Preparo",
+    "EmPreparo",
     "Pronto",
-    "A Caminho",
+    "ACaminho",
     "Recusado",
   ];
 

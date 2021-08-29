@@ -28,7 +28,7 @@ export function OrderListItem({
   title,
 }: OrderListItemProps) {
   return (
-    <SListItem className={`orderListItem--${status}`}>
+    <SListItem className={`cardListItem--${status}`}>
       <SListItemImage>
         <img src={avatar} alt="avatar" title="avatar" />
       </SListItemImage>

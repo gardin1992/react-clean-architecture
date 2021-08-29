@@ -4,10 +4,10 @@ import { useRepository } from "order-management/presentation/hooks/useRepository
 import { IRepository } from "app/infra/repositories/IRepository";
 import { PageTitle } from "app/presentation/components/page-title";
 import { OrderListFilter } from "order-management/presentation/components/order-list-filter";
-import { SOrderListItem } from "./styles";
 import { CardListItemProps } from "app/presentation/components/list/card-list/card-list-item";
 import { getStatusFromIndex } from "order-management/main/utils/helper";
 import { randomOrder } from "order-management/main/utils/randoms";
+import { OrderList } from "order-management/presentation/components/order-list";
 
 type Props = {
   repository: IRepository;
@@ -42,8 +42,8 @@ function OrderManagement({ repository: orderRepository }: Props) {
     <div>
       <PageTitle title="Gestão de Pedidos" />
       <OrderListFilter />
-      <SOrderListItem
-        items={[
+      <OrderList
+        orders={[
           ...items,
           randomOrder(),
           randomOrder(),

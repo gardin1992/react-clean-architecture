@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 import { CardList } from "app/presentation/components/list/card-list";
-import { colors } from "app/presentation/styles/theme";
 import {
   SListItemTextSecondary,
   SListItemText,
 } from "app/presentation/components/list/card-list/card-list-item/styles";
+import { colors } from "app/presentation/styles/theme";
 
-export const SOrderListItem = styled(CardList)`
+export const SOrderList = styled(CardList)`
   li {
     &:hover {
       ${SListItemTextSecondary},
