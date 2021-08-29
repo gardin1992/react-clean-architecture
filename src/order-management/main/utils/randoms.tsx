@@ -1,5 +1,5 @@
 import { IOrderStatusType } from "order-management/domain/models/order-model";
-import { OrderListItemProps } from "order-management/presentation/views/OrderManagement/OrderList/OrderListItem";
+import { OrderListItemProps } from "order-management/presentation/components/order-list-item";
 import faker from "faker/locale/pt_BR";
 
 export function randomOrderStatus(): IOrderStatusType {

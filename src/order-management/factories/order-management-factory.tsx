@@ -1,6 +1,6 @@
 import { axiosHttpClient } from "app/infra/http";
 import { OrderRepository } from "order-management/main/repositories/OrderRepository";
-import OrderManagement from "order-management/presentation/views/OrderManagement";
+import OrderManagement from "order-management/presentation/views/order-management";
 
 export function orderManagementFactory() {
   const httpClient = axiosHttpClient({

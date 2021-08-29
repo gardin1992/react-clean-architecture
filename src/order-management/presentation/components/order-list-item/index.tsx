@@ -9,7 +9,7 @@ import {
   SListItemTitle,
   SListITemValueTotal,
   SListItemGrid,
-} from "order-management/presentation/views/OrderManagement/OrderList/OrderListItem/styles";
+} from "./styles";
 
 export type OrderListItemProps = {
   avatar?: string;

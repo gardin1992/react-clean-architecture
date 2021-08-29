@@ -2,7 +2,7 @@ import {
   IRepository,
   RepositoryQueryProps,
 } from "app/infra/repositories/IRepository";
-import { OrderListItemProps } from "order-management/presentation/views/OrderManagement/OrderList/OrderListItem";
+import { OrderListItemProps } from "order-management/presentation/components/order-list-item";
 import { useCallback } from "react";
 
 const QUERY_SKIP = 0;

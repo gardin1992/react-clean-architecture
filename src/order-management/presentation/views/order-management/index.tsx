@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 
-import { OrderListFilter } from "order-management/presentation/views/OrderManagement/OrderListFilter";
 import { useOrderService } from "order-management/presentation/hooks/useOrderService";
-import { OrderList } from "./OrderList";
 import { IRepository } from "app/infra/repositories/IRepository";
 import { PageTitle } from "app/presentation/components/page-title";
+import { OrderListFilter } from "order-management/presentation/components/order-list-filter";
+import { OrderList } from "order-management/presentation/components/order-list";
 
 type OrderManagementProps = {
   orderRepository: IRepository;
@@ -15,7 +15,6 @@ function OrderManagement({ orderRepository }: OrderManagementProps) {
 
   useEffect(() => {
     getAllOrders({});
-
     console.log(orders);
   }, [getAllOrders, orders]);
   return (

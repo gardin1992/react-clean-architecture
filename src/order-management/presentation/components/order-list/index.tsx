@@ -1,4 +1,7 @@
-import { OrderListItemProps, OrderListItem } from "./OrderListItem";
+import {
+  OrderListItem,
+  OrderListItemProps,
+} from "order-management/presentation/components/order-list-item";
 
 export type OrderListProps = {
   orders: OrderListItemProps[];
