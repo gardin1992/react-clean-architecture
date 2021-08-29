@@ -13,7 +13,8 @@ export type FomInputCheckboxProps = {
   label: string;
   placeholder?: string;
   hasError?: boolean;
-  value?: string;
+  checked?: boolean;
+  required?: boolean;
   handleOnChange?: (e: React.FormEvent<HTMLInputElement>) => void;
 };
 
@@ -36,8 +37,9 @@ export function FomInputCheckbox({
   label,
   placeholder,
   hasError,
-  value,
   handleOnChange,
+  checked,
+  required,
 }: FomInputCheckboxProps) {
   return (
     <SFormGroup className="">
@@ -47,9 +49,10 @@ export function FomInputCheckbox({
         <SInputCheckbox
           type="checkbox"
           name={label}
-          value={value}
+          checked={checked}
           placeholder={placeholder}
           onChange={handleOnChange}
+          required={required}
         />
         <span>Sim</span>
       </SInputCheckboxGroup>
