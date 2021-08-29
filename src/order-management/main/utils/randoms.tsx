@@ -1,8 +1,8 @@
-import { IOrderStatusType } from "order-management/domain/models/order-model";
 import { OrderListItemProps } from "order-management/presentation/components/order-list-item";
 import faker from "faker/locale/pt_BR";
+import { getRandomInt } from "app/main/utils/math";
 
-export function randomOrderStatus(): IOrderStatusType {
+export function randomOrderStatus(): string {
   const orderStatus = [
     "Pendente",
     "Em Preparo",
@@ -11,8 +11,8 @@ export function randomOrderStatus(): IOrderStatusType {
     "Recusado",
   ];
 
-  const index = 1;
-  return "Pendente";
+  const index = getRandomInt(0, orderStatus.length - 1);
+  return orderStatus[index];
 }
 
 export function randomOrder(): OrderListItemProps {

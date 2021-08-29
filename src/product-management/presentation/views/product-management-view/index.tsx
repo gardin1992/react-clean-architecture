@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-import { OrderListFilter } from "order-management/presentation/views/OrderManagement/OrderListFilter";
 import { useOrderService } from "order-management/presentation/hooks/useOrderService";
 import { CardList } from "app/presentation/components/list/card-list";
 import styled from "styled-components";
@@ -13,6 +12,7 @@ import {
 } from "app/presentation/components/list/card-list/card-list-item/styles";
 import { IRepository } from "app/infra/repositories/IRepository";
 import { PageTitle } from "app/presentation/components/page-title";
+import { OrderListFilter } from "order-management/presentation/components/order-list-filter";
 
 type OrderManagementProps = {
   orderRepository: IRepository;
