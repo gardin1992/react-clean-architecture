@@ -1,4 +1,4 @@
-import { Button } from "app/presentation/components/Button/Button";
+import { Button } from "app/presentation/components/button";
 import { colors } from "app/presentation/styles/theme";
 
 import styled from "styled-components";

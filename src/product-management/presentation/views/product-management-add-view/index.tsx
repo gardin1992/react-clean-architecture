@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import {
   SProductManagementButtonSave,
   SProductManagementTitle,
-} from "../button-save";
+} from "../product-management-view/button-save";
 
 export type ProductFormData = {
   title: string;

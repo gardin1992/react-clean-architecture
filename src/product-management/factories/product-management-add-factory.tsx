@@ -1,6 +1,6 @@
 // import { axiosHttpClient } from "app/infra/http";
 
-import { ProductManagementAddView } from "product-management/presentation/views/product-management/product-management-add-view";
+import { ProductManagementAddView } from "product-management/presentation/views/product-management-add-view";
 
 export function productManagementAddFactory() {
   // const httpClient = axiosHttpClient({
