@@ -1,10 +1,10 @@
 export const colors = {
   white: "#fff",
   black: "#000",
-  pending: "#DC3545",
-  inPreparation: "#FFC107",
-  ready: "#0D6EFD",
-  onWay: "#6F42C1",
-  delivered: "#198754",
-  refused: "#6C757D",
+  danger: "#DC3545",
+  warning: "#FFC107",
+  info: "#0D6EFD",
+  secondary: "#6F42C1",
+  success: "#198754",
+  primary: "#6C757D",
 };

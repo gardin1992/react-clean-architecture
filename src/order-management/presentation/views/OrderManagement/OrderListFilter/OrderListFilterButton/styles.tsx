@@ -12,55 +12,55 @@ export const SListFilterButton = styled(Button)`
   }
 
   &.pending {
-    color: ${colors.pending};
-    border-color: ${colors.pending};
+    color: ${colors.danger};
+    border-color: ${colors.danger};
 
     &:hover {
-      background-color: ${colors.pending};
+      background-color: ${colors.danger};
     }
   }
 
   &.inPreparation {
-    color: ${colors.inPreparation};
-    border-color: ${colors.inPreparation};
+    color: ${colors.warning};
+    border-color: ${colors.warning};
 
     &:hover {
-      background-color: ${colors.inPreparation};
+      background-color: ${colors.warning};
     }
   }
 
   &.ready {
-    color: ${colors.ready};
-    border-color: ${colors.ready};
+    color: ${colors.info};
+    border-color: ${colors.info};
 
     &:hover {
-      background-color: ${colors.ready};
+      background-color: ${colors.info};
     }
   }
 
   &.onWay {
-    color: ${colors.onWay};
-    border-color: ${colors.onWay};
+    color: ${colors.secondary};
+    border-color: ${colors.secondary};
 
     &:hover {
-      background-color: ${colors.onWay};
+      background-color: ${colors.secondary};
     }
   }
   &.delivered {
-    color: ${colors.delivered};
-    border-color: ${colors.delivered};
+    color: ${colors.success};
+    border-color: ${colors.success};
 
     &:hover {
-      background-color: ${colors.delivered};
+      background-color: ${colors.success};
     }
   }
 
   &.refused {
-    color: ${colors.refused};
-    border-color: ${colors.refused};
+    color: ${colors.primary};
+    border-color: ${colors.primary};
 
     &:hover {
-      background-color: ${colors.refused};
+      background-color: ${colors.primary};
     }
   }
 `;

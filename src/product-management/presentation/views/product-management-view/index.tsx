@@ -34,7 +34,7 @@ const OrderListItemTest = styled(CardList)`
       }
 
       &:hover {
-        background-color: ${colors.pending};
+        background-color: ${colors.danger};
 
         ${SListItemTextSecondary},
         ${SListItemText} {

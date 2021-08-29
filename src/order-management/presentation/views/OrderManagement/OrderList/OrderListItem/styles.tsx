@@ -50,7 +50,7 @@ export const SListItem = styled.li`
     }
 
     &:hover {
-      background-color: ${colors.pending};
+      background-color: ${colors.danger};
 
       ${SListITemStatus},
       ${SListITemRequestNumber} {
