@@ -1,13 +1,9 @@
-import { axiosHttpClient } from "app/infra/http";
-import { OrderRepository } from "order-management/main/repositories/OrderRepository";
+import { Repository } from "app/infra/repositories/repository";
+import { AxiosInstance } from "axios";
 import OrderManagement from "order-management/presentation/views/order-management";
 
-export function orderManagementFactory() {
-  const httpClient = axiosHttpClient({
-    baseURL: process.env.REACT_APP_API_URL,
-  });
+export function orderManagementFactory(httpClient: AxiosInstance) {
+  const repository = new Repository(httpClient, "orders");
 
-  const orderRepository = OrderRepository(httpClient);
-
-  return <OrderManagement orderRepository={orderRepository} />;
+  return <OrderManagement repository={repository} />;
 }
