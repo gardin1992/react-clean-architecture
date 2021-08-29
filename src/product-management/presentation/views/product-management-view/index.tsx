@@ -4,12 +4,8 @@ import { useOrderService } from "order-management/presentation/hooks/useOrderSer
 
 import { IRepository } from "app/infra/repositories/IRepository";
 import { PageTitle } from "app/presentation/components/page-title";
-import { OrderListFilter } from "order-management/presentation/components/order-list-filter";
 import { SProductListItem } from "./styles";
-import {
-  randomOrder,
-  randomOrderStatus,
-} from "order-management/main/utils/randoms";
+import { randomOrder } from "order-management/main/utils/randoms";
 
 type OrderManagementProps = {
   orderRepository: IRepository;
@@ -26,8 +22,7 @@ export function ProductManagement({ orderRepository }: OrderManagementProps) {
 
   return (
     <div>
-      <PageTitle title="Gestão de Produto" />
-      <OrderListFilter />
+      <PageTitle title="Gestão de Produto" subtitle="Lista dos Produtos" />
       <SProductListItem
         className="OrderListItemTest"
         items={[

@@ -8,6 +8,8 @@ export type CardListProps = {
 };
 
 export const SCardList = styled.ul`
+  padding: 10px;
+  min-width: 320px;
   li:hover,
   li:focus {
     cursor: pointer;
