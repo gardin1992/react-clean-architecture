@@ -14,6 +14,8 @@ export type FormInputProps = {
   hasError?: boolean;
   value?: string;
   handleOnChange?: (e: React.FormEvent<HTMLInputElement>) => void;
+  type?: "text" | "email" | "search" | "url";
+  required?: boolean;
 };
 
 export function FormInput({
@@ -22,6 +24,8 @@ export function FormInput({
   hasError,
   value,
   handleOnChange,
+  type,
+  required,
 }: FormInputProps) {
   return (
     <SFormGroup className="">
@@ -29,11 +33,12 @@ export function FormInput({
 
       <SInputGroup>
         <SInput
-          type="text"
+          type={type ?? "text"}
           name={label}
           value={value}
           placeholder={placeholder}
           onChange={handleOnChange}
+          required={required}
         />
       </SInputGroup>
 
