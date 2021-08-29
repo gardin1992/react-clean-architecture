@@ -4,6 +4,11 @@ import styled from "styled-components";
 export const SHeaderLogo = styled.figure`
   padding: 10px;
   display: inline-block;
+  img {
+    width: 40px;
+    height: 40;
+    border-radius: 50%;
+  }
 `;
 
 export const SHeaderTitle = styled.h1`
