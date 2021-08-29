@@ -1,9 +1,9 @@
 import { FomInputCheckbox } from "app/presentation/components/form/input-checkbox-form";
 import { FormInput } from "app/presentation/components/form/input-form";
 import { PageTitle } from "app/presentation/components/page-title";
+import { SProductManagementButton } from "product-management/presentation/components/product-management-button";
 
-import React, { useState } from "react";
-import { SProductManagementButtonSave } from "../product-management-view/button-save";
+import { useState } from "react";
 
 export type ProductFormData = {
   title: string;
@@ -98,7 +98,9 @@ export function ProductManagementAddView() {
         />
       </form>
 
-      <SProductManagementButtonSave>Salvar</SProductManagementButtonSave>
+      <SProductManagementButton variant="success" type="submit">
+        Salvar
+      </SProductManagementButton>
     </div>
   );
 }

@@ -35,6 +35,19 @@ export const SListItem = styled.li`
   min-width: 360px;
   overflow: hidden;
   padding: 10px;
+
+  ${SListItemTitle},
+  ${SListItemDecimal} {
+    font-size: 16px;
+    color: ${colors.black};
+  }
+
+  ${SListItemTextSecondary},
+  ${SListItemText} {
+    color: ${colors.black};
+  }
+
+  transition: background-color 0.3s;
 `;
 
 export const SListItemImage = styled.figure`

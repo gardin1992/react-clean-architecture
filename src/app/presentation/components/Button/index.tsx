@@ -26,3 +26,7 @@ export function Button({
     </SButton>
   );
 }
+
+Button.defaultProps = {
+  variant: "primary",
+};

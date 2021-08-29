@@ -29,7 +29,7 @@ export function CardListItem({
   title,
 }: CardListItemProps) {
   return (
-    <SListItem className={`cardListItem--${status}`}>
+    <SListItem className={`cardListItem--${status.replace(/\s/, "")}`}>
       <SListItemImage>
         <img src={avatar} alt="avatar" title="avatar" />
       </SListItemImage>
