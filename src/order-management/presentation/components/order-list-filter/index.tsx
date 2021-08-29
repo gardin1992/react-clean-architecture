@@ -1,8 +1,5 @@
-import {
-  SListFilterGridButton,
-  SOrderListFilter,
-} from "order-management/presentation/views/OrderManagement/OrderListFilter/styles";
-import { OrderListFilterButton } from "./OrderListFilterButton";
+import { OrderListFilterButton } from "order-management/presentation/components/order-list-filter-button";
+import { SListFilterGridButton, SOrderListFilter } from "./styles";
 
 export function OrderListFilter() {
   return (

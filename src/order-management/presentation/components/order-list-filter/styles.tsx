@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SListFilterButton } from "./OrderListFilterButton/styles";
+import { SListFilterButton } from "../order-list-filter-button/styles";
 
 export const SOrderListFilter = styled.div`
   background-color: #eaeaea;
