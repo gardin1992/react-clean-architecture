@@ -1,17 +1,25 @@
 import { CardListItem, CardListItemProps } from "./card-list-item";
 import cx from "classnames";
+import styled from "styled-components";
 
 export type CardListProps = {
   items: CardListItemProps[];
   className?: string;
 };
 
+export const SCardList = styled.ul`
+  li:hover,
+  li:focus {
+    cursor: pointer;
+  }
+`;
+
 export function CardList({ items, className }: CardListProps) {
   return (
-    <ul className={cx(["order-list", className])}>
+    <SCardList className={cx(["order-list", className])}>
       {items.map((item) => (
         <CardListItem {...item} />
       ))}
-    </ul>
+    </SCardList>
   );
 }
