@@ -31,10 +31,12 @@ export const SListItem = styled.li`
   display: flex;
   height: 80px;
   justify-content: flex-start;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   min-width: 360px;
   overflow: hidden;
   padding: 10px;
+  transition: background-color 0.3s;
+  background-color: ${colors.white};
 
   ${SListItemTitle},
   ${SListItemDecimal} {
@@ -46,8 +48,6 @@ export const SListItem = styled.li`
   ${SListItemText} {
     color: ${colors.black};
   }
-
-  transition: background-color 0.3s;
 `;
 
 export const SListItemImage = styled.figure`

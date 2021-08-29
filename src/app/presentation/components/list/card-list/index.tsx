@@ -14,6 +14,8 @@ export const SCardList = styled.ul`
   li:focus {
     cursor: pointer;
   }
+
+  background: rgb(250 245 250);
 `;
 
 export function CardList({ items, className }: CardListProps) {

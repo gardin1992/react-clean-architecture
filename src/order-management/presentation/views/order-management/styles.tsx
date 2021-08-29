@@ -16,27 +16,46 @@ export const SOrderListItem = styled(CardList)`
       }
     }
 
-    &.cardListItem--Pendente:hover {
-      background-color: ${colors.danger};
+    &.cardListItem--Pendente {
+      box-shadow: 0px 4px 4px ${colors.danger};
+      &:hover {
+        background-color: ${colors.danger};
+      }
     }
 
-    &.cardListItem--EmPreparo:hover {
-      background-color: ${colors.warning};
+    &.cardListItem--EmPreparo {
+      box-shadow: 0px 4px 4px ${colors.warning};
+      &:hover {
+        background-color: ${colors.warning};
+      }
     }
 
-    &.cardListItem--Pronto:hover {
-      background-color: ${colors.info};
+    &.cardListItem--Pronto {
+      box-shadow: 0px 4px 4px ${colors.info};
+      &:hover {
+        background-color: ${colors.info};
+      }
     }
 
-    &.cardListItem--ACaminho:hover {
-      background-color: ${colors.secondary};
+    &.cardListItem--ACaminho {
+      box-shadow: 0px 4px 4px ${colors.secondary};
+      &:hover {
+        background-color: ${colors.secondary};
+      }
     }
 
-    &.cardListItem--Entregue:hover {
-      background-color: ${colors.success};
+    &.cardListItem--Entregue {
+      box-shadow: 0px 4px 4px ${colors.success};
+      &:hover {
+        background-color: ${colors.success};
+      }
     }
-    &.cardListItem--Recusado:hover {
-      background-color: ${colors.primary};
+
+    &.cardListItem--Recusado {
+      box-shadow: 0px 4px 4px ${colors.primary};
+      &:hover {
+        background-color: ${colors.primary};
+      }
     }
   }
 `;
