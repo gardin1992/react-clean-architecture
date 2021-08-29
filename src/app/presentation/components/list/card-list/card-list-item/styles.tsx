@@ -1,5 +1,6 @@
-import { colors } from "app/presentation/styles/theme";
 import styled from "styled-components";
+
+import { colors } from "app/presentation/styles/theme";
 
 export const SListItemTitle = styled.h3`
   font-size: 16px;

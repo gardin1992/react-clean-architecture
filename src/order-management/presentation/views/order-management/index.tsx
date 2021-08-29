@@ -1,19 +1,18 @@
 import { useEffect } from "react";
 
-import { useRepository } from "order-management/presentation/hooks/useRepository";
-import { IRepository } from "app/infra/repositories/IRepository";
-import { PageTitle } from "app/presentation/components/page-title";
-import { OrderListFilter } from "order-management/presentation/components/order-list-filter";
 import { CardListItemProps } from "app/presentation/components/list/card-list/card-list-item";
+import { PageTitle } from "app/presentation/components/page-title";
+import { useRepository } from "app/presentation/hooks/useRepository";
+import { IRepository } from "app/infra/repositories/IRepository";
 import { getStatusFromIndex } from "order-management/main/utils/helper";
 import { randomOrder } from "order-management/main/utils/randoms";
 import { OrderList } from "order-management/presentation/components/order-list";
+import { OrderListFilter } from "order-management/presentation/components/order-list-filter";
 
 type Props = {
   repository: IRepository;
 };
 
-// Adicionar a interface do RemoteOrder (Model para o endpoit)
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function mapperRemoteOrder(data: any[]): CardListItemProps[] {
   const items: CardListItemProps[] = data.map((item) => ({

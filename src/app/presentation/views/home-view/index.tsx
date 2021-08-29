@@ -1,5 +1,6 @@
-import { PageTitle } from "app/presentation/components/page-title";
 import { Link } from "react-router-dom";
+
+import { PageTitle } from "app/presentation/components/page-title";
 
 export default function Home() {
   return (

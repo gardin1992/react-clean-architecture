@@ -1,9 +1,9 @@
+import { useState } from "react";
+
 import { FomInputCheckbox } from "app/presentation/components/form/input-checkbox-form";
 import { FormInput } from "app/presentation/components/form/input-form";
 import { PageTitle } from "app/presentation/components/page-title";
 import { SProductManagementButton } from "product-management/presentation/components/product-management-button";
-
-import { useState } from "react";
 
 export type ProductFormData = {
   title: string;

@@ -1,6 +1,7 @@
-import { OrderListItemProps } from "order-management/presentation/components/order-list-item";
 import faker from "faker/locale/pt_BR";
+
 import { getRandomInt } from "app/main/utils/math";
+import { OrderListItemProps } from "order-management/presentation/components/order-list-item";
 
 export function randomOrderStatus(): string {
   const orderStatus = [

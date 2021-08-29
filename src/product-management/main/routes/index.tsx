@@ -1,5 +1,6 @@
-import { RouteType } from "app/main/routes/router";
 import { AxiosInstance } from "axios";
+
+import { RouteType } from "app/main/routes/router";
 import {
   productManagementAddFactory,
   productManagementFactory,

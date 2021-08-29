@@ -1,9 +1,11 @@
+import { BrowserRouter } from "react-router-dom";
+
 import ImgLogo from "assets/logo.png";
+
+import { axiosHttpClient } from "app/infra/http";
 import { Header } from "app/presentation/components/header";
 import GlobalStyle from "app/presentation/styles/global";
-import { BrowserRouter } from "react-router-dom";
 import Router from "./routes/router";
-import { axiosHttpClient } from "app/infra/http";
 
 function Main() {
   const title = process.env.REACT_APP_NAME;

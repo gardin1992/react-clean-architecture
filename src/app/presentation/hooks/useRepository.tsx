@@ -1,9 +1,10 @@
+import { useState, useCallback } from "react";
+
 import {
   IRepository,
   RepositoryQueryProps,
 } from "app/infra/repositories/IRepository";
 import { OrderListItemProps } from "order-management/presentation/components/order-list-item";
-import { useState, useCallback } from "react";
 
 const QUERY_SKIP = 0;
 const QUERY_LIMIT = 10;

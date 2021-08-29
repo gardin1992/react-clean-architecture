@@ -1,6 +1,7 @@
+import styled from "styled-components";
+
 import { Button } from "app/presentation/components/button";
 import { colors } from "app/presentation/styles/theme";
-import styled from "styled-components";
 
 export const SListFilterButton = styled(Button)`
   flex: 0 0 32%;

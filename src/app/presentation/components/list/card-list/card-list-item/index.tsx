@@ -1,5 +1,6 @@
-import { toDecimal } from "app/main/utils/math";
 import { format } from "date-fns";
+
+import { toDecimal } from "app/main/utils/math";
 import {
   SListItem,
   SListItemImage,

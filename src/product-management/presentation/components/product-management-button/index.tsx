@@ -1,6 +1,6 @@
-import { Button } from "app/presentation/components/button";
-
 import styled from "styled-components";
+
+import { Button } from "app/presentation/components/button";
 
 export const SProductManagementButton = styled(Button)`
   margin: 0 auto;

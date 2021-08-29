@@ -1,6 +1,7 @@
-import { CardListItem, CardListItemProps } from "./card-list-item";
 import cx from "classnames";
 import styled from "styled-components";
+
+import { CardListItem, CardListItemProps } from "./card-list-item";
 
 export type CardListProps = {
   items: CardListItemProps[];

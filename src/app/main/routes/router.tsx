@@ -1,7 +1,8 @@
 import { AxiosInstance } from "axios";
+import { Route, Switch } from "react-router-dom";
+
 import { makeOrderManagementRoutes } from "order-management/main/routes";
 import { makeProductManagementRoutes } from "product-management/main/routes";
-import { Route, Switch } from "react-router-dom";
 import { homeViewFactory } from "../factories/home-view-factory";
 
 export type RouteType = {

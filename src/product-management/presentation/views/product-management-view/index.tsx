@@ -1,11 +1,10 @@
 import { useEffect } from "react";
 
-import { useRepository } from "order-management/presentation/hooks/useRepository";
-
 import { IRepository } from "app/infra/repositories/IRepository";
+import { useRepository } from "app/presentation/hooks/useRepository";
 import { PageTitle } from "app/presentation/components/page-title";
-import { SProductListItem } from "./styles";
 import { randomOrder } from "order-management/main/utils/randoms";
+import { SProductListItem } from "./styles";
 
 type Props = {
   repository: IRepository;

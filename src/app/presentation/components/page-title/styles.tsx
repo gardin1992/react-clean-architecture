@@ -1,5 +1,5 @@
-import { colors } from "app/presentation/styles/theme";
 import styled from "styled-components";
+import { colors } from "app/presentation/styles/theme";
 
 export const SPageSubtitle = styled.span`
   color: ${colors.primary};

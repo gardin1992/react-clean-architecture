@@ -1,8 +1,5 @@
 import { randomOrder } from "order-management/main/utils/randoms";
-import {
-  OrderListItem,
-  OrderListItemProps,
-} from "order-management/presentation/components/order-list-item";
+import { OrderListItemProps } from "order-management/presentation/components/order-list-item";
 import { SOrderList } from "./styles";
 
 export type OrderListProps = {
