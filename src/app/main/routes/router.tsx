@@ -1,4 +1,3 @@
-import { axiosHttpClient } from "app/infra/http";
 import { AxiosInstance } from "axios";
 import { makeOrderManagementRoutes } from "order-management/main/routes";
 import { makeProductManagementRoutes } from "product-management/main/routes";

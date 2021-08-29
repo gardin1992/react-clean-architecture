@@ -1,4 +1,3 @@
-import { axiosHttpClient } from "app/infra/http";
 import { RouteType } from "app/main/routes/router";
 import { AxiosInstance } from "axios";
 import {
